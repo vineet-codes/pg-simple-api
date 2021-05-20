@@ -1,0 +1,28 @@
+http://localhost:3005/users
+
+### 
+
+http://localhost:3005/users/3
+
+### 
+
+POST http://localhost:3005/users HTTP/1.1
+content-type: application/json
+
+{
+    "username": "Vineet",
+    "bio": "This is Vineet"
+}
+
+### 
+
+PUT http://localhost:3005/users/1 HTTP/1.1
+content-type: application/json
+
+{
+    "username": "Vineet123",
+    "bio": "This is Vineet Singh's bio updated via PUT"
+}
+
+### 
+DELETE http://localhost:3005/users/2 HTTP/1.1
